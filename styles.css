@@ -1,0 +1,546 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Header Styling */
+header {
+    background-color: #001400;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*color: #fff;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h2 {
+    color: #00cc00;
+}
+
+/* Navigation Bar Styles */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00FF00; /* Light green on hover */
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+/* Individual hover effects */
+.login-btn:hover, .logout-btn:hover {
+    color: #00FF00; /* Light green on hover */
+}
+
+/* Search Form */
+.search-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-input {
+    width: 500%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}  
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 100px 50px;
+    background-image: url('rosemary-flowers-blue-violet.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.hero-content {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00cc00;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #d4d4d4;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/*Traditional healing system*/
+.systems {
+    background-image: url('Traditional_herbals.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+ /* Style for clickable headings */
+        .system-card h2 {
+            cursor: pointer;
+            color: #e67e22;
+            text-decoration: underline;
+        }
+
+/* CSS for the hidden details */
+        .details {
+            display: none; /* Hide by default */
+            margin-top: 10px;
+			color: #e67e22;
+			font-size: 1.1em; /* Increase font size */
+        }
+/* Additional styling for the list in details */
+        .details ul {
+            list-style-type: disc;
+            padding-left: 30px;
+        }
+
+
+
+/* Support Section */
+/* Section styling */
+.support-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+	border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px; 
+    padding: 30px; /* Increased padding for a spacious layout */
+}
+
+.support-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header styling */
+.support-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Dropdown styling */
+.support-card label {
+    font-size: 1em;
+    color: #555;
+    margin-right: 10px;
+}
+
+#plant-models {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+#plant-models:focus {
+    outline: none;
+    border-color: #1caad9;
+}
+
+/* Model display container */
+#plant-model-display {
+    margin-top: 20px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9d6ff;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+#no-selection-message {
+    color: #000; /* Sets the text color to black */
+    font-size: 1.2em; /* Adjust font size as needed */
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.model-frame {
+    width: 100%;
+    height: 100%;
+}
+
+/* Model iframe */
+.model-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Hide iframes when not displayed */
+.model-frame[style*="display: none;"] {
+    display: none !important;
+}
+
+
+
+/* Virtual Tours Section */
+.virtual-tours-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+	margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.virtual-tours-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.virtual-tour-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.virtual-tour-button span {
+    font-size: 0.8em;
+}
+
+/* Advanced Search Section */
+.advanced-search-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Horizontally centers all child elements (like the search bar) */
+    justify-content: flex-start; /* Align items to the top initially */
+}
+
+/* Heading */
+.advanced-search-section h2 {
+    font-size: 1.6em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.search-bar select, .search-bar input, .search-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.search-bar select, .search-bar input {
+    width: 200px;
+    max-width: 100%;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Search Results */
+#search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering the results horizontally */
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Individual Plant Result */
+.plant-result {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.plant-result img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.plant-result h3 {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.plant-result p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+
+
+
+
+/* Section Title Styling */
+.section-title {
+    text-align: center; /* Center the heading */
+    font-size: 2.5rem; /* Adjust the font size */
+    margin: 50px 0; /* Add space above and below the heading */
+    color: #00cc00; /* Set text color to green */
+}
+
+/* System Cards */
+/* Full width for the section */
+.systems {
+    width: 100%;
+    padding: 20px;
+    background-color: #1d1d1d;
+}
+
+.system-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling for full-width compatibility */
+.card-image img {
+    width: 350px; /* Adjust this based on how large you want the image */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Content inside each card */
+.card-content {
+    flex-grow: 1;
+    padding-left: 20px;
+    color: white;
+}
+
+.card-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1.2rem;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 10px;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Make the navbar items and search bar align in a single line */
+/* Navbar with flexbox */
+.navbar {
+    display: flex;
+    align-items: center; /* Vertically align elements */
+    background-color: #333;
+    padding: 8px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Aligns the items horizontally */
+    flex-grow: 1;   /* Allows the nav-links to take up available space */
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Search bar alignment with flex 
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-container .search-button {
+    background-color: #4CAF52;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+
+.search-container .search-button:hover {
+    background-color: #45a049;
+}
+*/
